@@ -2,9 +2,10 @@
 
 class LoginController extends BaseController {
 
-    public function index()
-    {
-       return View::make('login');
-    }
+	
+	public function index()
+	{
+		return View::make('login');
+	}
 
 }

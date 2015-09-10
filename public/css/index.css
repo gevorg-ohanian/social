@@ -27,3 +27,7 @@ a{
 a:link,a:active,a:visited{
     color:white;
 }
+#h1{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}

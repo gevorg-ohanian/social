@@ -10,8 +10,8 @@
         <header>
             <img src='images/social_logo.png'>
       
-             <a href='#'>Login</a>
-             <a href='#'> New Account</a>
+             <a href='login'>Login</a>
+             <a href='register'> </a>
             
         </header>
         <section>
