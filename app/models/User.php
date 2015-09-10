@@ -15,6 +15,17 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var string
 	 */
 	protected $table = 'users';
+        
+        protected $fillable = array(
+          'name',
+          'users_id',
+          'surname',
+          'dob',
+          'email',
+          'login',
+          'password'
+           
+        );
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -23,21 +34,21 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
         
-        public function store()
-        {
-            if(isset($_POST['name'])){
-
-            DB::table('users')->insert(
-                    array(
-                        'name'     => $_POST['name'],
-                        'surname'  => $_POST['surname'],
-                        'dob'      => $_POST['dob'],
-                        'email'    => $_POST['email'],
-                        'login'    => $_POST['login'],
-                        'password' => md5($_POST['password'])
-                    ));
-            
-        }
-        }
+//        public function store()
+////        {
+////            if(isset($_POST['name'])){
+////
+////            DB::table('users')->insert(
+////                    array(
+////                        'name'     => $_POST['name'],
+////                        'surname'  => $_POST['surname'],
+////                        'dob'      => $_POST['dob'],
+////                        'email'    => $_POST['email'],
+////                        'login'    => $_POST['login'],
+////                        'password' => md5($_POST['password'])
+////                    ));
+////            
+////        }
+////        }
 
 }

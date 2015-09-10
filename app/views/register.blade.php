@@ -2,12 +2,8 @@
 @section('content')
 <h1 id='h1'>Create New Account</h1>
 
-<form class="form-horizontal" name="register" method="post" action="register/store">
-    <div class="control-group">
-    <div class="controls">
-      <input type="hidden" name="users_id">
-    </div>
-  </div>
+<form class="form-horizontal" name="register" method="post" action="register">
+    
   <div class="control-group">
     <label class="control-label" for="name">Name</label>
     <div class="controls">
@@ -49,5 +45,7 @@
       <button type="submit" class="btn btn-success">Register</button>
     </div>
   </div>
+    <input type='hidden' value="<?php echo csrf_token(); ?>" name="_token">
 </form>
+ <img src='images/arm_map.jpg' alt="arm_map">
 @stop

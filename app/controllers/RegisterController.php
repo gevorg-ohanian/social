@@ -10,7 +10,8 @@ class RegisterController extends BaseController {
         
         public function store()
         {
-            $users= new User;
-            $user->save();
+            $data = Input::all();
+            $data['password'] = md5($data['password']);
+            User::create($data);
         }
 }

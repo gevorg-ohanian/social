@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/social.am/app/routes.php</file>
-            <file>file:/C:/xampp/htdocs/social.am/app/views/template/footer.blade.php</file>
-            <file>file:/C:/xampp/htdocs/social.am/app/controllers/HomeController.php</file>
-            <file>file:/C:/xampp/htdocs/social.am/app/views/template/template.blade.php</file>
-            <file>file:/C:/xampp/htdocs/social.am/app/views/home.blade.php</file>
-            <file>file:/C:/xampp/htdocs/social.am/app/views/template/header.blade.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/app/models/User.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/app/views/register.blade.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/app/views/template/header.blade.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/app/routes.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/app/controllers/RegisterController.php</file>
         </group>
     </open-files>
 </project-private>

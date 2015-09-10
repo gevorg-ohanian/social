@@ -31,3 +31,8 @@ a:link,a:active,a:visited{
     margin-left: 30px;
     margin-bottom: 20px;
 }
+img[alt='arm_map']{
+        float: right;
+    margin-top: -393px;
+    margin-right: 330px;
+}
