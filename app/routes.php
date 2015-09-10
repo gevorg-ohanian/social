@@ -11,12 +11,4 @@
 |
 */
 
-//Route::get('/', function()
-//{
-//	return View::make('hello');
-//});
-
-Route::get('/','HomeController@showWelcome');
-Route::get('first',array('uses'=>'firstController@firstShow','as'=>'main.first'));
-Route::get('first/{id}',array('uses'=>'firstController@showId','as'=>'main.first'));
-Route::post('first',array('uses'=>'firstController@addUser'));
+Route::get('/','LoginController@index');

@@ -1,7 +1,17 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-<title></title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>social</title>
+        <link type='text/css' rel='stylesheet' href='css/index.css'></link>
+         <link type='text/css' rel='stylesheet' href='css/bootstrap.css'></link>
+    </head>
+    <body>
+        <header>
+            <img src='images/social_logo.png'>
+      
+             <a href='#'>Login</a>
+             <a href='#'> New Account</a>
+            
+        </header>
+        <section>

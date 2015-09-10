@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    padding:5px;
+    background: rgb(136,0,21);
+}
+body{
+    background:grey;
+}
+footer{
+    padding:20px;
+    background: orange;
+}
+section{
+    padding:20px;
+    background:white;
+}
+a{
+    text-decoration:none;
+    float:right;
+    font-size:30px;
+    margin-right: 60px;
+    margin-top:50px;
+}
+a:link,a:active,a:visited{
+    color:white;
+}
