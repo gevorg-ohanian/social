@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/','LoginController@index');
-Route::resource('/login','LoginController');
-Route::resource('/register', 'RegisterController');
-Route::resource('/home', 'HomeController');
+Route::resource('/','LoginController');
+//Route::resource('login','LoginController');
+Route::resource('register', 'RegisterController');
+
+
+
+Route::group(array('after' => 'auth'), function()
+{
+    Route::get('home', 'HomeController@Home');
+    Route::get('home/logout','HomeController@logout');
+});

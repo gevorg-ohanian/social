@@ -1,8 +1,8 @@
 @extends('template.template')
 @section('content')
-<a href="login" id='logout' class="btn btn-large btn-primary disabled">Logout</a>
+<a href="home/logout" id='logout' class="btn btn-large btn-primary disabled">Logout</a>
 
-    <h1> Welcom to main page</h1>
+    <h1> Welcome to main page</h1>
     @if(isset($user))
   
     <span>

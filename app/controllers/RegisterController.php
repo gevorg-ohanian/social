@@ -11,7 +11,7 @@ class RegisterController extends BaseController {
         public function store()
         {
             $data = Input::all();
-            $data['password'] = md5($data['password']);
+            $data['password'] = Hash::make($data['password']);
             User::create($data);
             return Redirect::to('register'); 
         }

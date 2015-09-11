@@ -3,13 +3,15 @@
 class HomeController extends BaseController {
 
 	
-	public function index()
+	public function home()
 	{
-             
-	    $user = User::get_user();	
-          
-            return View::make('home')->with('user',$user);
+		return View::make('home');
 	}
-        
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::to('/');
+	}
       
 }

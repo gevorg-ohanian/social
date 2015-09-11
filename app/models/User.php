@@ -15,10 +15,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var string
 	 */
 	protected $table = 'users';
+
+    protected $primaryKey = 'users_id';
         
         protected $fillable = array(
           'name',
-          'users_id',
           'surname',
           'dob',
           'email',

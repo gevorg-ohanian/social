@@ -9,24 +9,20 @@ class LoginController extends BaseController {
 	}
         
         public function store()
-        {    
-            $data = Input::all();
-            $user = DB::table('users')->where('login', $data['login'])->first();
-            if( $user->password == md5($data['password']))
-            {
-                Session::put('id', $user->users_id); 
-                
-                return Redirect::to('home'); 
-            
-            }else
-            {
-                return Redirect::to('login'); 
+        {
+            $inputs = Input::all();
+
+            if(Auth::attempt(
+                array('login'=>$inputs['login'],'password'=>$inputs['password']))){
+
+                return Redirect::to('home');
             }
-////          
-           
-//            echo '<pre>';
-//              var_dump($user);exit;
-//               echo '</pre>';
+
+            else
+            {
+                return Redirect::to('/');
+            }
+
+
         }
 }
-?>
