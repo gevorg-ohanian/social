@@ -14,3 +14,4 @@
 Route::get('/','LoginController@index');
 Route::resource('/login','LoginController');
 Route::resource('/register', 'RegisterController');
+Route::resource('/home', 'HomeController');

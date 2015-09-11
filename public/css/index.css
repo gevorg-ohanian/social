@@ -17,14 +17,14 @@ section{
     padding:20px;
     background:white;
 }
-a{
+.menu{
     text-decoration:none;
     float:right;
     font-size:30px;
     margin-right: 60px;
     margin-top:50px;
 }
-a:link,a:active,a:visited{
+.menu:link,.menu:active,.menu:visited{
     color:white;
 }
 #h1{
@@ -32,7 +32,19 @@ a:link,a:active,a:visited{
     margin-bottom: 20px;
 }
 img[alt='arm_map']{
-        float: right;
-    margin-top: -393px;
+    float: right;
+    margin-top: -405px;
     margin-right: 330px;
+}
+#logout{
+    position:relative;
+    float:right;
+    font-size:25px;
+}
+img[alt='anon']{
+    width: 100px;
+    border: 1px solid;
+}
+#h2{
+    color:blue;
 }

@@ -34,21 +34,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
         
-//        public function store()
-////        {
-////            if(isset($_POST['name'])){
-////
-////            DB::table('users')->insert(
-////                    array(
-////                        'name'     => $_POST['name'],
-////                        'surname'  => $_POST['surname'],
-////                        'dob'      => $_POST['dob'],
-////                        'email'    => $_POST['email'],
-////                        'login'    => $_POST['login'],
-////                        'password' => md5($_POST['password'])
-////                    ));
-////            
-////        }
-////        }
+        public static function get_user()
+        {
+//            dd(Session::get('id'));exit;
+            $users = DB::table('users')->where('users_id',Session::get('id'))->first();
+           
+            return $users;
+        } 
 
 }

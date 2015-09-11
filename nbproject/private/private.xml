@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/xampp/htdocs/social/social/app/models/User.php</file>
             <file>file:/C:/xampp/htdocs/social/social/app/views/register.blade.php</file>
+            <file>file:/C:/xampp/htdocs/social/social/public/css/index.css</file>
             <file>file:/C:/xampp/htdocs/social/social/app/views/template/header.blade.php</file>
             <file>file:/C:/xampp/htdocs/social/social/app/routes.php</file>
             <file>file:/C:/xampp/htdocs/social/social/app/controllers/RegisterController.php</file>

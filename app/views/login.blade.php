@@ -1,16 +1,17 @@
 @extends('template.template')
 @section('content')
-<form class="form-horizontal" name="login" method="post" action='#'>
+<h1 id='h1'>Welcom to Social.am</h1>
+<form class="form-horizontal" name="login" method="post" action='login'>
   <div class="control-group">
-    <label class="control-label" for="inputEmail">Login</label>
+    <label class="control-label" for="login">Login</label>
     <div class="controls">
-      <input type="text" id="inputEmail" placeholder="Login">
+      <input type="text" name="login" placeholder="Login">
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputPassword">Password</label>
+    <label class="control-label" for="password">Password</label>
     <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
+      <input type="password" name="password" placeholder="Password">
     </div>
   </div>
   <div class="control-group">
@@ -18,5 +19,7 @@
       <button type="submit" class="btn btn-success">Log In</button>
     </div>
   </div>
+    <input type='hidden' value="<?php echo csrf_token(); ?>" name="_token">
 </form>
+
 @stop

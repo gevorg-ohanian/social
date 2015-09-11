@@ -12,8 +12,8 @@
         <header>
             <img src='images/social_logo.png'>
       
-             <a href='login'>Login</a>
-             <a href='register'> </a>
+             <a class='menu' href='login'>Login</a>
+             <a class='menu' href='register'>New Account</a>
             
         </header>
         <section>

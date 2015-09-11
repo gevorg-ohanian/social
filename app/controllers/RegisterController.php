@@ -13,5 +13,6 @@ class RegisterController extends BaseController {
             $data = Input::all();
             $data['password'] = md5($data['password']);
             User::create($data);
+            return Redirect::to('register'); 
         }
-}
+} 
