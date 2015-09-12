@@ -1,7 +1,6 @@
 @extends('template.template')
 @section('content')
 <a href="home/logout" id='logout' class="btn btn-large btn-primary disabled">Logout</a>
-
     <h1> Welcome to main page</h1>
     @if(isset($user))
   
@@ -11,7 +10,7 @@
     
     @endif
     <p>
-  <a href='#'><button class="btn btn-primary" type="button">Send a Message</button></a>
+  <a href='message'><button class="btn btn-primary" type="button">Send a Message</button></a>
   <a href='#'><button class="btn btn-primary" type="button">Inbox Messages</button></a>
 </p>
      @stop

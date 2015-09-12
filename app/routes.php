@@ -21,4 +21,5 @@ Route::group(array('after' => 'auth'), function()
 {
     Route::get('home', 'HomeController@Home');
     Route::get('home/logout','HomeController@logout');
+    Route::get('message','MessageController@index');
 });
