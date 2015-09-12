@@ -7,5 +7,15 @@ class Message extends  Eloquent implements UserInterface, RemindableInterface
 {
     use UserTrait, RemindableTrait;
 
-    protected $table = '';
+    protected $table = 'messages';
+    protected $primaryKey = 'messages_id';
+
+
+    protected $fillable = array(
+        'message',
+        'sender_id',
+        'receiver_id'
+    );
+
+
 }
